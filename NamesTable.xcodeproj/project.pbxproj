@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E142D680230040AD00A1C2F0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E142D67F230040AD00A1C2F0 /* DetailViewController.swift */; };
+		E18B35BE2300946500482A66 /* HeaderContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18B35BD2300946500482A66 /* HeaderContactsViewController.swift */; };
 		E1E1B87822FC698200B42BEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E1B87722FC698200B42BEC /* AppDelegate.swift */; };
 		E1E1B87D22FC698200B42BEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1E1B87B22FC698200B42BEC /* Main.storyboard */; };
 		E1E1B87F22FC698300B42BEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1E1B87E22FC698300B42BEC /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		E142D67F230040AD00A1C2F0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E18B35BD2300946500482A66 /* HeaderContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderContactsViewController.swift; sourceTree = "<group>"; };
 		E1E1B87422FC698200B42BEC /* NamesTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NamesTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1E1B87722FC698200B42BEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1E1B87C22FC698200B42BEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				E1E1B88922FC6A4500B42BEC /* ContactsInfoViewController.swift */,
+				E18B35BD2300946500482A66 /* HeaderContactsViewController.swift */,
 				E142D67F230040AD00A1C2F0 /* DetailViewController.swift */,
 			);
 			path = Controller;
@@ -181,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E18B35BE2300946500482A66 /* HeaderContactsViewController.swift in Sources */,
 				E1E1B88C22FC6A6500B42BEC /* Person.swift in Sources */,
 				E1E1B88A22FC6A4500B42BEC /* ContactsInfoViewController.swift in Sources */,
 				E1E1B87822FC698200B42BEC /* AppDelegate.swift in Sources */,
