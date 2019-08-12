@@ -14,16 +14,16 @@ class ContactsInfoViewController: UIViewController {
 
      @IBOutlet weak var tableView: UITableView!
      
-     // MARK: - Private Properties
+     // MARK: - Public Properties
      
-     private var model = Person()
-     private var personsArray: [Person] = Array()
+     var personsArray: [Person] = Array()
      
      // MARK: - Lifecycle
      
      override func viewDidLoad() {
           super.viewDidLoad()
-          personsArray = model.createPersons()
+          let tbvc = self.tabBarController  as! MainTabBarController
+          personsArray = tbvc.personsArray
      }
      
      // MARK: - Navigation

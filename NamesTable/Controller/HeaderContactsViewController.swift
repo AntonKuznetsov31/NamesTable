@@ -11,19 +11,19 @@ import UIKit
 class HeaderContactsViewController: UIViewController {
     
     // MARK: - IBOutlets
-
+    
     @IBOutlet weak var tableView: UITableView!
     
-    // MARK: - Private Properties
+    // MARK: - Public Properties
     
-    private var model = Person()
-    private var personsArray: [Person] = Array()
+    var personsArray: [Person] = Array()
     
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        personsArray = model.createPersons()
+        let tbvc = self.tabBarController  as! MainTabBarController
+        personsArray = tbvc.personsArray
     }
     
 }
@@ -31,7 +31,7 @@ class HeaderContactsViewController: UIViewController {
 // MARK: - Table view delegate
 
 extension HeaderContactsViewController: UITableViewDelegate {
-
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 40
     }
@@ -41,11 +41,10 @@ extension HeaderContactsViewController: UITableViewDelegate {
 
 extension HeaderContactsViewController: UITableViewDataSource {
     
-    
     func numberOfSections(in tableView: UITableView) -> Int {
         return personsArray.count
     }
-
+    
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let person = personsArray[section]
         return "\(person.name) \(person.surname)"
